@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="393dp"
+        android:layout_height="775dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_e52e0a37e4194b7766ffbde181a0434" />
+
+    <ImageView
+        android:id="@+id/pokemonImage"
+        android:layout_width="331dp"
+        android:layout_height="296dp"
+        android:layout_marginTop="188dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pokeball" />
+
+    <Button
+        android:id="@+id/pokemonButton"
+        android:layout_width="108dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="4dp"
+        android:text="Show Random Pokemon"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/pokeDisc"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonImage" />
+
+    <TextView
+        android:id="@+id/pokeDisc"
+        android:layout_width="254dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#4CAF50"
+        android:fontFamily="casual"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintStart_toEndOf="@+id/pokemonButton"
+        app:layout_constraintTop_toBottomOf="@+id/pokeName" />
+
+    <TextView
+        android:id="@+id/pokeName"
+        android:layout_width="322dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        android:background="#4CAF50"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
